@@ -1,0 +1,38 @@
+body {
+  font-family: "Noto Sans";
+  font-weight: 300;
+  background-color: black;
+  color: white; }
+  body table {
+    border-left: 1px solid;
+    border-top: 1px solid;
+    border-spacing: 8px; }
+  body table {
+    margin-top: 16px; }
+  body textarea {
+    background-color: transparent;
+    color: inherit;
+    font: inherit;
+    width: 640px;
+    height: 480px;
+    outline: none; }
+  body select {
+    background-color: transparent;
+    color: inherit;
+    font: inherit;
+    outline: none; }
+    body select option {
+      background-color: black;
+      color: inherit;
+      font: inherit; }
+  body a {
+    color: inherit; }
+  body .tags {
+    float: right; }
+    body .tags .tag {
+      border: 1px solid;
+      border-radius: 4px;
+      padding: 2px;
+      font-size: 80%; }
+    body .tags .tag + .tag {
+      margin-left: 4px; }

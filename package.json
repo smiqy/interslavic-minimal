@@ -1,0 +1,26 @@
+{
+  "name": "interslavic-minimal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "pug": "mkdir -p docs && cd docs && pug index.pug -wo .",
+    "sass": "mkdir -p docs && cd docs && node-sass style.sass -wo .",
+    "dev": "npm run pug & npm run sass & live-server --wait=1000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smiqy/interslavic-analytic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smiqy/interslavic-analytic/issues"
+  },
+  "homepage": "https://github.com/smiqy/interslavic-analytic#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^4.14.1",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}

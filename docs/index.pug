@@ -1,0 +1,114 @@
+mixin table(xss)
+  table
+    tr
+      for x in xss[0]
+        th= x
+    tr
+      for x in xss[1]
+        td.isv= x
+
+html
+  head
+    link(rel="stylesheet", href="style.css")
+    script(src="script.js")
+
+  body
+    .tags
+      span.tag
+        | auþor="
+        a(href="https://twitter.com/intent/user?user_id=759648849786920960") суми
+        | "
+      span.tag language="englısh mınımal"
+      span.tag date=[2020,8,25]
+
+    h1 ınterslavıc mınımal
+
+    p
+      em ınterslavıc mınımal
+      | &#x20;(
+      span.isv međuslovjansky minimaĺny.
+      | )&#x20;be one dıalect of&#x20;
+      a(href="http://steen.free.fr/ınterslavıc/index.html") ınterslavıc
+      | .
+      | ı dıd create ıt so þat ıt be even more sımple þan slovıanto.
+      | ıt not have and{ınflectıon, gender, number, anımacy}.
+
+    section
+      h2 orþography
+
+      div
+        div
+          select#alphabet
+            option(value="lat") latın
+            option(value="cyr", selected) cyrıllıc
+            option(value="cyr-iot") cyrıllıc ıotated
+
+        textarea#in.
+          Međuslovjanskí język može bytì veliká pomoć dĺa pųtujųćih i takože jest doskonalœ orųdje dĺa tyh, ktori hoćųt brzo naučitì sę jednœgo ili vęće slovjanskih językov. Učenje sę takœgo języka ne jest tęžkœ i usilje ne zajmaĵe mnogo časa. Kògda člověk dobro znaĵe takí język, on aùtomatično imaĵe možnost́ izražanja sę v vśakœm slovjanskœm kraji i može råzumětì bliz vse, čto ĺudi k ňemu govoręt ili pišųt.
+          «Naučný Međuslovjanskí» jest ortografičný sistem, ktorý možno koristatì k pisanju råznyh językoprojektov, vkĺučajųć Slovjanskí i Novoslověnskí. Tœj pravopis råzni sę od drugih jedino tym, že imaĵe pŀnų i dost́ råzšiŕenų abecedų i vslěd tœgo podavaĵe čitateĺu vęće informacije o izgovorě i etimologiji slov. Očevidno zvųči komentaŕ: po čto sųt nam té divné znaki, ktoryh ne imaĵemò v svojih vlastnyh piśmah i črėz ktoré tekst izględaĵe skaredno i jedino odstrašaĵe potenciaĺnyh čitateĺev. Da, ne odvŕgaĵų, že imaĵete pravdų. Ale ne zabųd́te, že cěĺ tœj ortografije ne jest ni lěpost́ ni vygoda, ale prėd vsem kompletnost́. Nikto ne očekivaĵe, že by kto-nebųd́ načęl pisatì takim sposobòm.
+          Pomimo pozorov, Naučný Međuslovjanskí ne jest nikakœ arhaičnœ prodŀženje mŕtvœgo praslovjanskœgo języka i takože ne imaĵe ničto obćego s cŕkòvnoslovjanskim. Protivno, on byl stvoŕený na osnově vsěh živųćih ješče slovjanskih językov. Vśako, cělkòm ne treba, že by někto iměl naučný stųpèň ili molil sę k ʒvězdam, že by dobro råzuměl teksty napisané tym pravopisòm.
+        textarea#out
+
+    p
+      | text default be ın not ınterslavıc mınımal but ınterslavıc orıgınal and be from&#x20;
+      a(href="http://steen.free.fr/ınterslavıc/flavorizacija.html#dialects") þıs
+      | .
+
+    section
+      h2 noun
+
+      p ıf word order not be (N verb D A), we use preposıtıon below.
+      table
+        +table([
+          ["N", "A", "G", "D"],
+          ["", "go", "od", "k"]
+        ])
+
+      h3 pronoun
+        +table([
+          ["ı", "þou", "ıt,ve", "self"],
+          ["ja", "ty", "on", "sę"]
+        ])
+        +table([
+          ["wheþer", "whıch", "what,who", "how"],
+          ["či", "koj", "kto", "kak"]
+        ])
+        +table([
+          ["every-,-ever", "some-", "no-"],
+          ["vse-", "ně-", "ni-"]
+        ])
+
+    section
+      h2 verb
+
+      p we put auxılıary verb ınstead þat we conȷugate ıt.
+
+      +table([
+        ["present", "past", "future", "condıtıonal", "ımperatıve", "noun"],
+        ["", "běše", "bųde", "by", "bųd́", "že"]
+      ])
+
+    section
+      h2 adȷectıve
+
+      +table([
+        ["least",    "less þan", "more þan", "most"],
+        ["najmenje", "menje čem", "vyše čem",  "najvyše"]
+      ])
+
+    section
+      h2 numeral
+
+      p we ȷust read number by þat we read every dıgıt from left.
+
+      +table([
+        ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "100", "1000"],
+        ["nula", "jedin", "dva", "tri", "četyri", "pęt́", "šest́", "седм", "osm", "devęt́", "desęt́", "sto", "tysęć"]
+      ])
+
+    section
+      h2 lınk
+
+      ul
+        li: a(href="http://steen.free.fr/interslavic/nms.html") orthography fundamental
+        li: a(href="https://interslavic-dictionary.com/") dıctıonary
